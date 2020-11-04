@@ -24,12 +24,26 @@ function displayInfo( formData )
 		
 		const tableElement = document.createElement( "table" );
 		
+		const trElement = document.createElement( "tr" );
+		keyElement = document.createElement( "th" );
+		keyElement.innerText = "Key";
+		trElement.appendChild( keyElement );
+		
+		valueElement = document.createElement( "th" );
+		valueElement.innerText = "Value";
+		trElement.appendChild( valueElement );
+	
+		tableElement.appendChild( trElement );
+	
 		for( var pair of formData.entries() )
 		{
 			appendRow( tableElement, pair[ 0 ], pair[ 1 ] );
 		}
 
 		
+		const headerElement = document.createElement( "h2" );
+		headerElement.innerText = "Form Data Entered";
+		infoElement.appendChild( headerElement );
 		infoElement.appendChild( tableElement );
 	}
 }
