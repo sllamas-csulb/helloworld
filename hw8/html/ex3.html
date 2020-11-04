@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 3 from Salvador Llamas</title>
+		<link rel="stylesheet" href="../css/ex3.css">
+	</head>
+	<body>
+
+		<h2>Sample Form</h2>
+		<form>
+			<label>Name:</label><input type="text" name="name" id="name"><br/>
+			<label>E-mail:</label><input type="text" name="mail" id="mail"><br/>
+			
+			<label>Payment Type:</label><br/>
+			<input type="radio" name="payment" id="cash" value="cash">
+			<label for="cash">Cash</label><br/>
+			<input type="radio" name="payment" id="credit_card" value="credit_card">
+			<label for="cash">Credit Card</label><br/>
+			<input type="radio" name="payment" id="google_pay" value="google_pay">
+			<label for="cash">Google Pay</label><br/>
+			<input type="radio" name="payment" id="apple_pay" value="apple_pay">
+			<label for="cash">Apple Pay</label><br/>
+			<br/>
+			<input type="checkbox" name="promotion" id="promotion" value="on">
+			<label for="cash">Sign me up for special promotions</label><br/>
+			<select name="location" id="location">
+				<option value="la">Los Angeles</option>
+				<option value="oc">Orange County</option>
+				<option value="rs">Riverside</option>
+				<option value="sd">San Diego</option>
+			</select><br/>
+			<input type="submit" value="Submit" id="submitButton"><button>Cancel</button>
+		</form>
+		
+		<div id="info">
+		</div>
+		
+		<script src="../js/ex3.js"></script>
+		
+		<a href="index.html">Back to Index</a>
+	</body>
+</html> 
