@@ -1,0 +1,25 @@
+body
+{
+	font-family: calibri;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0px 5px 0px 5px;
+}
+
+th
+{
+	background-color: lightgray;
+}
+
+/*
+a.	Border: 1px solid black
+b.	Collapse the border
+c.	Left and right padding: 5px
+d.	Table header background color: lightgray
+e.	Font: Calibri (can use that for the entire document)
+f.	Include a "catch" method.  It's OK to write errors to the console (instead of HTML page)
+*/
